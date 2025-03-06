@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Search for movies</h2>
+        <input type="text" id="movie" placeholder="Enter a Movie name">
+        <button onclick="getMovie()">Get Result</button>
+        <button onclick="getMovieDetails()">Get Movie Details</button>
+        <button onclick="getCastandCrew()">Get Cast and Crew</button>
+        <button onclick="getCast()">Get Cast Information</button>
+        <div id="movie-result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}">
+        const movie = document.getElementById("movie").value;
+        alert("movie")
+    </script>
+</body>
+</html> 
